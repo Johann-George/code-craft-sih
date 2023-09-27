@@ -4,12 +4,7 @@ const postSchema = new mongoose.Schema({
       type: String,
       required: true
     },
-    content: {
-      type: String,
-      required: true
-    },
-    author: {
-      type: mongoose.Schema.Types.ObjectId, // Assuming you have a User schema
+    content: {      type: mongoose.Schema.Types.ObjectId, // Assuming you have a User schema
       ref: 'User',
       required: true
     },
